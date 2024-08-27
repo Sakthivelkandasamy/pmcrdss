@@ -35,10 +35,10 @@ class DocumentUploadController extends Controller
         try {
             $s3 = new S3Client([
                     'version' => 'latest',
-                    'region'  => env('AWS_DEFAULT_REGION'),
+                    'region'  =>config('services.aws.region'),,
                     'credentials' => [
-                        'key'    => env('AWS_ACCESS_KEY_ID'),
-                        'secret' => env('AWS_SECRET_ACCESS_KEY'),
+                        'key'    => config('services.aws.key'),,
+                        'secret' =>config('services.aws.secret'),
                     ],
                    // 'http' => ['verify' => false] ,
                 ]);
@@ -47,7 +47,7 @@ class DocumentUploadController extends Controller
             $fileName = time() . '_' . $file->getClientOriginalName();
 
             $result = $s3->putObject([
-                'Bucket' => env('AWS_BUCKET'),
+                'Bucket' => config('services.aws.bucket'),
                 'Key'    => $fileName,
                 'Body'   => fopen($file->getRealPath(), 'r'),
                 'ACL'    => 'public-read', // Makes the file publicly readable
