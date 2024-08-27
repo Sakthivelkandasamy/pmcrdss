@@ -1,0 +1,178 @@
+.orderific-multi-select{
+    .vscomp-ele-wrapper{
+        font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+
+        &.focused{
+            .vscomp-toggle-button{
+                box-shadow: none;
+            }
+        }
+        &.focus{
+            .vscomp-toggle-button{
+                box-shadow: none;
+            }
+        }
+        &:focus{
+            .vscomp-toggle-button{
+                box-shadow: none;
+            }
+        }
+
+        &.show-as-popup{
+            .vscomp-dropbox-container{
+                background-color: $white;
+                border-radius: 0;
+            }
+            .vscomp-dropbox-close-button{
+                background-color: $secondary-1;
+                color: $white;
+            }
+        }
+
+        .vscomp-toggle-button{
+            border: 0;
+            padding: 0 20px 0 10px;
+        }
+
+        .vscomp-dropbox-container{
+            width: 240px;
+            max-width: 240px !important;
+            border-radius: 0 0 16px 16px;
+            background-color: $white;
+            box-shadow: 0px 24px 72px 0px #00000033;
+
+            &.position-top{
+                border-radius: 16px 16px 0 0;
+            }
+
+            @media only screen and (max-width: 1172px){
+                max-width: 100%;
+                width: 100%;
+            }
+
+            .vscomp-dropbox{
+                background-color: transparent;
+
+                .vscomp-search-container{
+                    padding: 27px 16px;
+
+                    &:hover{
+                        background-color: $secondary-05;
+                    }
+
+                    .vscomp-toggle-all-button{
+                        .checkbox-icon{
+                            display: block;
+                            width: 28px;
+                            height: 28px;
+                            &::after{
+                                width: 28px;
+                                height: 28px;
+                                background-color: $secondary-1;
+                                border: 0;
+                                border-radius: 8px;
+                            }
+
+                            &.checked{
+                                &::after{
+                                    transform: none;
+                                    background-color: $success;
+                                    content: url('../../../../../../assets/ui/bms/img/tick.svg');
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                            }
+                        }
+
+                        .vscomp-toggle-all-label{
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 20px;
+                        }
+                    }
+
+                    .vscomp-search-label{
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 20px;
+                    }
+                }
+
+                .vscomp-options-container{
+                    max-height: 260px !important;
+
+                    &::-webkit-scrollbar{
+                        width: 4px;
+
+                    }
+
+                    &::-webkit-scrollbar-thumb{
+                        width: 4px;
+                        background-color: $secondary-1;
+                        border-radius: 8px;
+                    }
+
+                    .vscomp-options-list{
+                        height: auto !important;
+                        .vscomp-options{
+                            .vscomp-option{
+                                padding: 0 16px;
+                                height: 56px !important;
+                                border-bottom: 1px solid $secondary-1;
+
+                                &:last-child{
+                                    border-bottom: 0;
+                                }
+
+                                &.focused{
+                                    background-color: transparent;
+                                }
+
+                                &.selected{
+                                    background-color: transparent;
+                                    .checkbox-icon{
+                                        &::after{
+                                            transform: none;
+                                            background-color: $success;
+                                            content: url('../../../../../../assets/ui/bms/img/tick.svg');
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                        }
+                                    }
+                                }
+
+                                &:hover{
+                                    background-color: $secondary-05;
+                                }
+
+                                .checkbox-icon{
+                                    //display: block;
+                                    width: 28px;
+                                    height: 28px;
+                                    &::after{
+                                        width: 28px;
+                                        height: 28px;
+                                        background-color: $secondary-1;
+                                        border: 0;
+                                        border-radius: 8px;
+                                    }
+                                }
+
+                                .vscomp-option-text{
+                                    width: calc(100% - 40px);
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

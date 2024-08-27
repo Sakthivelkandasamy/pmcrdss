@@ -1,0 +1,58 @@
+@mixin dark-btn{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    background: $black;
+    color: #fff;
+    border: none;
+    width: 148px;
+    height: 40px;
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all .2s ease-in-out;
+    &:hover{
+        background:$brand-color;
+    }
+}
+
+@mixin btn-group{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0 13px;
+
+    a{
+        border: 1px solid $secondary-1;
+        border-radius: 32px;
+        padding: 12px 32px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        text-decoration: none;
+
+        &.btn-dark{
+            background-color: $black;
+            color: $white;
+        }
+
+        &.btn-white{
+            background-color: $white;
+            color: $black;
+        }
+
+        &.btn-secondary{
+            background-color: $secondary-1;
+            color: $black;
+            border: 0;
+        }
+        &.btn-disabled{
+            background-color: $secondary-05;
+            color: $secondary-4;
+            border:1px solid $secondary-05;
+        }
+    }
+}

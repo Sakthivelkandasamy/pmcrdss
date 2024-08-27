@@ -1,0 +1,60 @@
+.orderific-tabs{
+    margin-top: 0px;
+
+    .nav{
+        gap: 0px 14px;
+        padding: 0 16px;
+
+        .nav-item{
+            min-width: auto;
+
+            .nav-link{
+                padding: 12px 0;
+                background-color: transparent;
+                border-radius: 0;
+                color: $black;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 16px;
+                border: 0;
+                transition: none;
+
+                &.active{
+                    background-color: transparent;
+                    border: 0;
+                    color: $black;
+                    border-bottom: 3px solid $black;
+                }
+            }
+        }
+    }
+    .nav-area-btn{
+        .white-btn {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16px;
+            text-align: left;
+            background: #000000;
+            border: none;
+            border-radius: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            transition: all 0.2s ease-in-out;
+            gap: 0 10px;
+            background-color: rgba(0, 0, 0, 0.1);
+            color: #000000;
+            padding: 8px 12px;
+            &:hover{
+                background-color: $brand-color;
+                color:$white;
+            }
+        }
+    }
+
+    .tab-content{
+        .tab-pane{
+            padding: 15px 0;
+        }
+    }
+}

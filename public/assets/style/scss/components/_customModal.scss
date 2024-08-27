@@ -1,0 +1,78 @@
+.orderific-modal{
+
+    .modal-sm{
+        width: 350px;
+        --bs-modal-width: 350px;
+        margin: auto;
+
+        @media only screen and (max-width: 360px){
+            max-width: 98%;
+            width: 98%;
+            --bs-modal-width: 98%;
+        }
+    }
+
+    .modal-content{
+        border-radius: 16px;
+
+        .modal-header{
+            padding: 24px 16px 4px;
+            border-bottom: 0;
+
+            .modal-title{
+                font-size: 22px;
+                line-height: 24px;
+                font-weight: 700;
+            }
+    
+            .btn-close{
+                background-color: $white;
+                box-shadow: 0px 0px 84px 0px rgba(0, 0, 0, 0.5);
+                width: 32px;
+                height: 32px;
+                border-radius: 100%;
+                margin-right: 0;
+            }
+        }
+
+        .modal-body{
+            &::-webkit-scrollbar{
+                width: 5px;
+            }
+            &::-webkit-scrollbar-thumb{
+                border-radius: 8px;
+                background-color: $secondary-2;
+                width: 5px;
+            }
+
+            .orderific-form-wrapper{
+                padding: 0;
+                background-color: transparent;
+
+                &.os-form{
+    
+                    .form-list{
+                        padding-bottom: 0;
+                        margin-bottom: 0;
+                        border-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .modal-footer{
+            border-top: 0;
+
+            &.btn-grp{
+                @include btn-group;
+                gap: 0;
+                padding: 10px 10px 10px;
+
+                .btn-dark, .btn-white{
+                    padding: 11px 32px;
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,63 @@
+
+.orderific-cards{
+    min-width: 280px;
+    max-width: 280px;
+    background-color: $white;
+    border-radius: 16px;
+    padding: 15px 17px;
+
+    &.payment-mode{
+        margin-top: 26px;
+    }
+
+    .card-title{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        color: $black;
+        margin-bottom: 22px;
+    }
+
+    .card-info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 14px 0;
+
+        .card-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            .item-key{
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                color: $secondary;
+            }
+            .item-value{
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+            }
+
+            &.final{
+                padding-top: 6px;
+                .item-key{
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 24px;
+                }
+                .item-value{
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+}

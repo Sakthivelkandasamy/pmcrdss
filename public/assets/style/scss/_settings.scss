@@ -1,0 +1,40 @@
+$primary-bg: #0000000A;
+
+$brand-color: #5559b0;
+
+// Colors
+$black: #000000;
+$white: #ffffff;
+$success: #119717;
+$warning: #D69F11;
+$pending: #957C1C;
+$cancel: #E10E0E;
+$confirm: #1870EB;
+$status-success-bg: #CFEAD1;
+$status-pending-bg: #FCF3CC;
+$status-cancel-bg: #F9CFCF;
+$status-confirm-bg: #D1E2FB;
+$status-success: #119717;
+$light-white: rgba(255, 255, 255, 0.2);
+$secondary: rgba(0, 0, 0, 0.6);
+$secondary-05:rgba(0, 0, 0, 0.05);
+$secondary-1: rgba(0, 0, 0, 0.1);
+$secondary-2: rgba(0, 0, 0, 0.2);
+$secondary-4: rgba(0, 0, 0, 0.4);
+
+
+$secondary-white: rgba(255, 255, 255, 0.6);
+
+// Borders
+$light-border: rgba(0, 0, 0, 0.1);
+
+.text-dark{
+    color: $black;
+}
+
+.text-secondary{
+    color: $secondary;
+}
+.white-bg{
+    background-color: $white !important;
+}

@@ -1,0 +1,98 @@
+.orderific-otp {
+    .content {
+        padding: 4px 0 40px;
+
+        .msg{
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            margin-bottom: 8px;
+            color: $secondary;
+        }
+        .ph-number{
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+    }
+
+    .form-row{
+        position: relative;
+
+        input{
+            @media only screen and (max-width: 1496px) {
+                padding: 6px 15px;
+            }
+        }
+
+        label{
+            @media only screen and (max-width: 1496px) {
+                font-size: 14px;
+            }
+        }
+
+        p{
+            @media only screen and (max-width: 1496px) {
+                font-size: 14px;
+            }
+        }
+
+        &.opt-input{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            max-width: 100%;
+            margin: auto;
+            gap: 0 4px;
+
+            &.failed{
+                input{
+                    background-color: $white;
+                    border: 1px solid $brand-color;
+                }
+            }
+
+            input{
+                width: 48px;
+                height: 48px;
+                background-color: $white;
+                border: 1px solid $secondary-1;
+                border-radius: 100%;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: $black;
+                transition: all 0.2s ease-in-out;
+
+                &:focus{
+                    background-color: $white;
+                    outline: 1px solid $secondary;
+                }
+
+                &.active{
+                    background-color: $black;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .msg-timer{
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: 700;
+        color: $secondary-4;
+        margin: 16px 0 0 0;
+    }
+}
+
+#newVerifyModal{
+    .modal-footer{
+        padding: 20px 10px 12px;
+    }
+}

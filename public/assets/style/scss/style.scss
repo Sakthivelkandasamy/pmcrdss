@@ -1,0 +1,90 @@
+@import './_settings.scss';
+@import './mixins';
+@import './fonts';
+
+*{
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@import './components/checkbox';
+@import './components/dropdown';
+@import './components/_coverPage.scss';
+@import './components/_sidebar.scss';
+@import './components/_topheader.scss';
+@import './components/_main.scss';
+@import './components/_dashboard.scss';
+@import './components/_datatable.scss';
+@import './components/nav';
+@import './components/tabs';
+@import './components/cards';
+@import './components/multiSelect'; 
+@import './components/dropdown';
+@import './components/charts';
+@import './components/form';
+@import './components/calendar';
+@import './components/customModal';
+@import './components/deliveryZone';
+@import './components/sliderBtn';
+@import './components/otp';
+@import './components/reservation';
+@import './components/reviews';
+@import './components/webBuilder';
+@import './components/menu-management';
+
+.iti{
+  width: 100%;
+
+  .iti__selected-country-primary{
+    padding: 0 16px;
+    border-radius: 24px 0 0 24px;
+    background-color: rgba(0, 0, 0, 0.05);
+
+    .iti__flag .iti__globe{
+      margin-right: 8px;
+    }
+  }
+
+  .iti__dropdown-content{
+    border-radius: 16px;
+
+    .iti__country-list{
+      &::-webkit-scrollbar{
+          width: 4px;
+          background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-track{
+          background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb{
+          background-color: $light-border;
+          border-radius: 12px;
+      }
+
+      ul{
+        border-radius: 16px;
+      }
+
+      li{
+        border-bottom: 1px solid $light-border;
+        padding: 12px 18px;
+      }
+    }
+
+    input{
+      border: 0 !important;
+    }
+  }
+
+  .iti__tel-input{
+    padding: 12px 16px 12px 70px !important;
+  }
+}

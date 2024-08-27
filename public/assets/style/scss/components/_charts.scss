@@ -1,0 +1,176 @@
+.orderific-charts{
+    min-height: 368px;
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid $secondary-1;
+    background-color: $white;
+    padding: 50px 52px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0 54px;
+
+    @media only screen and (max-width: 992px){
+        flex-direction: column;
+        gap: 20px 0;
+        padding: 20px;
+    }
+
+    &.section{
+        flex-direction: column;
+        width: 100%;
+        gap: 44px 0;
+        padding: 24px 15px 48px;
+
+        @media only screen and (max-width: 992px){
+            gap: 24px 0;
+            padding: 24px 15px 30px;
+        }
+
+        @media only screen and (max-width: 576px){
+            gap: 0;
+            padding: 24px 15px;
+        }
+
+        .section-title{
+            width: 100%;
+        }
+
+        .section-content{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 0 54px;
+            padding: 0 30px;
+
+            @media only screen and (max-width: 992px){
+                flex-direction: column;
+                gap: 20px 0;
+                padding: 20px;
+            }
+
+            @media only screen and (max-width: 576px){
+                padding: 20px 0px;
+            }
+        }
+    }
+
+    .chart-container{
+        width: 260px;
+        position: relative;
+
+        @media only screen and (max-width: 992px){
+            width: 100%;
+            max-width: 260px;
+        }
+
+        canvas{
+            width: 100%;
+        }
+
+        .chart-content{
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            p{
+                font-size: 24px;
+                color: $black;
+                line-height: 32px;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+
+            .title{
+                font-size: 16px;
+                color: $secondary;
+                line-height: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .chart-labels{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px 0;
+
+        @media only screen and (max-width: 1100px){
+            min-width: 260px;
+        }
+
+        @media only screen and (max-width: 576px){
+            min-width: auto;
+            width: 100%;
+        }
+
+        .label-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            .label-key{
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 16px;
+
+                &.lk1{
+                    &::before{
+                        background-color: rgba(255, 86, 52, 1);
+                    }
+                }
+
+                &.lk2{
+                    &::before{
+                        background-color: rgba(178, 123, 112, 1);
+                    }
+                }
+
+                &.lk3{
+                    &::before{
+                        background-color: rgba(96, 84, 186, 1);
+                    }
+                }
+
+                &.lk4{
+                    &::before{
+                        background-color: rgba(109, 175, 236, 1);
+                    }
+                }
+
+                &.lk5{
+                    &::before{
+                        background-color: rgba(255, 198, 52, 1);
+                    }
+                }
+
+                &.lk6{
+                    &::before{
+                        background-color: rgba(22, 191, 214, 1);
+                    }
+                }
+
+                &::before{
+                    content: '';
+                    width: 20px;
+                    height: 8px;
+                    border-radius: 29px;
+                    display: inline-block;
+                }
+            }
+
+            .label-value{
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20px;
+            }
+        }
+    }
+}

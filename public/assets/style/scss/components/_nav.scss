@@ -1,0 +1,93 @@
+
+
+.orderific-navs{
+
+    &.progress-navs{
+        .nav{
+            gap: 14px 8px;
+
+            .nav-item{
+                .nav-link{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 0 9px;
+                    padding: 12px 14px 12px 12px;
+
+                    &.active{
+                        background-color: $brand-color;
+                    }
+
+                    &.complete{
+                        
+                        .marker{
+                            background-color: $success;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            svg{
+                                display: block;
+                            }
+                        }
+                    }
+
+                    span{
+                        font-size: 13px;
+                        font-weight: 700;
+                        line-height: 16px;
+
+                        &.marker{
+                            width: 24px;
+                            height: 24px;
+                            display: inline-block;
+                            background-color: $secondary-1;
+                            border-radius: 100%;
+
+                            svg{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .nav{
+        gap: 14px 6px;
+
+        .nav-item{
+            min-width: 100px;
+            text-align: center;
+            display: block;
+
+            .nav-link{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                background-color: $secondary-white;
+                border-radius: 32px;
+                padding: 14px 16px;
+                color: $black;
+                transition: all 0.2s ease-in-out;
+
+                &.active{
+                    background-color: $black;
+                    color: $white;
+                }
+
+                span{
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .tab-content{
+        .tab-pane{
+            padding: 24px 0;
+            // transition: all 0.2s ease-in-out;
+        }
+    }
+}

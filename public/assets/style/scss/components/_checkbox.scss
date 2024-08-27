@@ -1,0 +1,123 @@
+.custom-check{
+    border-radius: 8px;
+    background: $light-border;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    i{
+        font-weight: 600;
+        color: $white;
+        display: none;
+    }
+
+    &.active{
+        background-color: $success;
+
+        i{
+            display: block;
+        }
+    }
+
+    &.active{
+
+        &::before{
+            content: url("../../../../../../assets/ui/bms/img/tick.svg");
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    }
+
+}
+
+.r-btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0 8px;
+    padding-left: 16px;
+
+    .label{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        color: $black;
+    }
+}
+
+.radio-ghost{
+    border-radius: 8px;
+    background: $light-border;
+    min-width: 28px;
+    min-height: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 100%;
+    transition: all 0.2s ease-in-out;
+
+    &.xs{
+        min-width: 24px;
+        min-height: 24px;
+    }
+
+    &.lg{
+        min-width: 48px;
+        min-height: 48px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+
+    &.chkbx{
+        border-radius: 8px;
+    }
+}
+
+.r-btn input[type=radio]:checked + .radio-ghost{
+    background-color: $success;
+}
+
+.r-btn input[type=radio]:checked + .radio-ghost::before{
+    content: url("../../../../../../assets/ui/bms/img/tick.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.r-btn input[type=checkbox]:checked + .radio-ghost{
+    background-color: $success;
+}
+
+.r-btn input[type=checkbox]:checked + .radio-ghost::before{
+    content: url("../../../../../../assets/ui/bms/img/tick.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio-flex{
+
+    .r-btn input[type=radio]:checked + .radio-ghost::before{
+        display: none;
+    }
+
+    .r-btn input[type=radio]:checked + .radio-ghost{
+        background-color: $black !important;
+        color: $white !important;
+    }
+
+}
+
+input[type=radio], input[type=checkbox]{
+    position: absolute;
+    left: -9999999px;
+}

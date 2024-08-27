@@ -1,0 +1,290 @@
+.main-section-area {
+    .analytics-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .analytic-part {
+            width: 16%;
+            height: 200px;
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 16px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            transition: .2s;
+            &:hover{
+                background:$white;  
+            }
+            @media only screen and (max-width: 1199px){
+                width: 32.66%;
+                margin-bottom: 10px;
+            }
+            @media only screen and (max-width: 1199px){
+                width: 49%;
+                margin-bottom: 10px;
+            }
+            svg{
+                width:24px;
+                height: 24px;
+            }
+            .mov-btm {
+                margin-top: auto;
+            }
+            p {
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 16px;
+                text-align: left;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            h3 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 32px;
+                letter-spacing: -0.02em;
+                text-align: left;
+                margin-bottom: 0px;
+                @media only screen and (max-width: 1280px){
+                    font-size: 20px;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+    .chart-area {
+        display: flex;
+        gap: 10px;
+        margin:10px 0px;
+        @media only screen and (max-width: 1199px){
+            flex-wrap: wrap;
+        }
+        .bg-gray {
+            background: rgba(0, 0, 0, 0.05);
+            padding: 16px;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: -0.01em;
+            text-align: left;
+            color: $black;
+            margin-bottom: 0px;
+            @media only screen and (max-width: 580px){
+                font-size: 18px;
+                line-height: 1;
+            }
+        }
+        .customer-visit-chart,.revenue-chart {
+            width: 67%;
+            @media only screen and (max-width: 1199px){
+                width: 100%;
+            }
+        }
+        .upcoming-events, .top-items {
+            width: 33%;
+            @media only screen and (max-width: 1199px){
+                width: 100%;
+            }
+        }
+        .upcoming-events{
+            ul {
+                padding-left: 0px;
+                list-style: none;
+                margin-bottom: 0px;
+                li{
+                    margin-bottom: 12px;
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+            h4 {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: -0.01em;
+                text-align: left;
+                color: $black;
+                @media only screen and (max-width: 580px){
+                    font-size: 14px;
+                    line-height: 1;
+                }
+                span{
+                    color: rgba(0, 0, 0, 20%);
+                }
+            }
+            p {
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 16px;
+                text-align: left;
+                color: rgba(0, 0, 0, 40%);
+                margin-bottom: 0px;
+            }
+            .event-link {
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 16px;
+                text-align: left;
+                text-decoration: none;
+                color: #000000;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+        .revenue-chart{
+            button{
+                padding: 12px 8px;
+                border-radius: 100px !important;
+                background: #fff;
+                color: #000;
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 16px;
+                text-align: center;
+                transition: .2s;
+                &:hover{
+                    background:$black;
+                    color:$white;
+                }
+            }
+            button.active{
+                background:$black;
+                color:$white;
+            }
+            .d-flex {
+                @media only screen and (max-width: 580px){
+                flex-wrap: wrap;
+                gap: 10px;
+                }
+            }
+        }
+        .pie_chart-area {
+            width: 30%;
+            @media only screen and (max-width: 767px){
+                width: 100% !important;
+            }
+        }
+        .custom-chart-area {
+            width: 70% !important;
+            @media only screen and (max-width: 767px){
+                width: 100% !important;
+            }
+        }
+    }
+    .top-items{
+        .progress-bars{
+            .progress-bar {
+                margin-bottom: 16px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                .progress-label {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: -0.01em;
+                    text-align: left;
+                    color: $black;
+                    margin-bottom: 5px;
+                    @media only screen and (max-width: 580px){
+                        font-size: 14px;
+                        line-height: 1;
+                    }
+                }
+                .progress-val {
+                    font-family: DM Sans;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 16px;
+                    text-align: left;
+                    color: $black;
+                    margin-bottom: 5px;
+                }
+            }
+            p {
+                margin-bottom: 0px;
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 16px;
+                color: rgba(0, 0, 0, 0.4);
+                text-align: left;
+            }
+            .progress-full {
+                background: rgba(0, 0, 0, 0.05);
+                border-radius: 16px;
+            }
+            .progress {
+                height: 4px;
+                background-color: rgba(0, 0, 0, 0.6);
+                width: 0%;
+                transition: width 0.5s ease-in-out;
+            }
+            .colored-progress{
+                background-color: $brand-color;
+            }
+        }
+    }
+    .inventory-area{
+        
+        h2{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: -0.01em;
+            text-align: left;
+            color:$black;
+        }
+        .add-btn {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16px;
+            text-align: left;
+            background: $black;
+            color: #fff;
+            border: none;
+            width: 148px;
+            height: 40px;
+            padding: 8px 16px 8px 12px;
+            border-radius: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 8px;
+            transition: .2s;
+            &:hover{
+                background:$brand-color;
+            }
+        }
+    }
+    .chart-area svg g g g rect {
+        rx: 5px;
+        width: 16px;
+    }
+    .chart-area svg text {
+        font-family: 'DM Sans';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: center;
+        fill:rgba(0, 0, 0, 0.4);
+    }
+    .chart-area svg g g g:nth-child(2) rect {
+        display: none;
+    }
+    .chart-area svg g:last-child rect {
+        rx: 5px;
+        top:5px;
+    }
+    .chart-area svg g:nth-last-child(2) rect {
+        rx: 5px;
+    }
+}

@@ -1,0 +1,42 @@
+.reservation-pg-section{
+    .add-btn {
+        width: auto !important;
+        padding: 8px 11px !important;
+    }
+    .special-occasion {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        flex-wrap: wrap;
+        span {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: -0.01em;
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 11px 15px;
+            border-radius: 100px;
+            cursor: pointer;
+            display: block;
+            transition: .2s;
+            &:hover{
+                background: $black;
+                color:$white;
+            }
+            @media only screen and (max-width: 768px){
+                font-size: 16px;
+            }
+        }
+        span.active{
+            background: $black;
+            color:$white;
+        }
+    }
+    .add-occasion {
+        display: none;
+    }
+    .open-occasion {
+        display: block;
+    }
+}
